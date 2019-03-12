@@ -1,0 +1,130 @@
+/*
+
+SETTINGS
+
+*/
+
+:root {
+    --color-alpha: OrangeRed;
+    --color-beta: #CCCCCC;
+    --gutter: 24px;
+}
+
+/*
+
+ELEMENTS
+
+*/
+
+body, html {
+    /* Positioning */
+    /* Box model */
+    /* Fonts */
+    font-family: "Muli", sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    color: var(--color-dark);
+    /* Appearance */
+    /* Other style */
+}
+
+.c-counter {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.c-form {
+    padding: calc(var(--gutter));
+}
+
+.c-form__item {
+    border-bottom: 1px var(--color-beta) solid;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.c-column1{
+    justify-content: left;
+}
+
+.c-column2{
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+}
+
+.c-column2>select{
+    flex: 1 1 100%;
+}
+
+.c-form__item>select {
+    flex: 1 1 100%;
+}
+
+.c-form__item>span {
+    flex: 1 1 100%;
+}
+
+.c-input input {
+    border: none;
+    outline: none;
+    margin: calc(var(--gutter)/3);
+}
+
+.c-input select{
+    border: none;
+    outline: none;
+    margin: calc(var(--gutter)/3);
+}
+
+.c-round {
+    position: relative;
+    margin-top: calc(var(--gutter)/3);
+    display: flex;
+}
+
+.c-round label {
+    background-color: #fff;
+    border: 1.2px solid var(--color-alpha);
+    border-radius: 50%;
+    cursor: pointer;
+    height: 16px;
+    position: absolute;
+    width: 16px;
+}
+
+.c-round label:after {
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    content: "";
+    height: 3.5px;
+    left: 3.5px;
+    opacity: 0;
+    position: absolute;
+    top: 4px;
+    transform: rotate(-45deg);
+    width: 6.5px;
+}
+
+.c-round input[type="checkbox"] {
+    visibility: hidden;
+}
+
+.c-round input[type="checkbox"]:checked+label {
+    background-color: var(--color-alpha);
+    border-color: var(--color-alpha);
+}
+
+.c-round input[type="checkbox"]:checked+label:after {
+    opacity: 1;
+}
+
+.c-categorie{
+    margin-left: calc(var(--gutter) /3  + 16px);
+}
+
+.u-color-alpha {
+    color: var(--color-alpha);
+}

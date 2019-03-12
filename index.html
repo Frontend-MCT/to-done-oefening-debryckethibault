@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="screen" href="style/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="style/screen.css" />
+    <script src="./script/app.js"></script>
+    <script src="./script/lib/dataAcces.js"></script>
+    <script src="./script/lib/todo.js"></script>
+    <script src="./script/lib/todoModule.js"></script>
+    <script src="./script/lib/todoUI.js"></script>
+    <title>To Done</title>
+</head>
+
+<body>
+    <main>
+        <header>
+            <h1>Hello Thibault,</h1>
+            <div class="c-counter">
+                There are <span class="js-todo-counter"> 0 </span> todos.
+            </div>
+        </header>
+
+
+        <form class="c-form">
+            <div class="c-input c-form__item">
+                <div class="c-column1">
+                    <p class="u-color-alpha js-new-add">+</p>
+                </div>
+                <div class="c-column2">
+                    <input type="text" placeholder="Enter new task here." class="js-new-title">
+                    <select class="js-new-category">
+                        <option>School</option>
+                    </select>
+                </div>
+            </div>
+            <div class="c-form__item todoHolderClass">
+                <div class="c-round c-input">
+                    <input type="checkbox" id="checkbox">
+                    <label class="c-round" for="checkbox"></label>
+                </div>
+                <p class="titleClass js-todo-items">De koeien melken</p>
+                <span class="c-categorie categoryClass">Categorie</span>
+            </div>
+        </form>
+    </main>
+
+</body>
+
+</html>
